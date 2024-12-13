@@ -1,0 +1,67 @@
+public class Hotel {
+
+    // Deklarasi atribut
+    private int idHotel;
+    private String namaHotel;
+    private String alamat;
+    private String noKantor;
+
+    // Konstruktor tanpa parameter
+    public Hotel() {
+    }
+
+    // Konstruktor dengan parameter
+    public Hotel(int idHotel, String namaHotel, String alamat, String noKantor) {
+        this.idHotel = idHotel;
+        this.namaHotel = namaHotel;
+        this.alamat = alamat;
+        this.noKantor = noKantor;
+    }
+
+    // Getter dan Setter untuk idHotel
+    public int getIdHotel() {
+        return idHotel;
+    }
+
+    public void setIdHotel(int idHotel) {
+        this.idHotel = idHotel;
+    }
+
+    // Getter dan Setter untuk namaHotel
+    public String getNamaHotel() {
+        return namaHotel;
+    }
+
+    public void setNamaHotel(String namaHotel) {
+        this.namaHotel = namaHotel;
+    }
+
+    // Getter dan Setter untuk alamat
+    public String getAlamat() {
+        return alamat;
+    }
+
+    public void setAlamat(String alamat) {
+        this.alamat = alamat;
+    }
+
+    // Getter dan Setter untuk noKantor
+    public String getNoKantor() {
+        return noKantor;
+    }
+
+    public void setNoKantor(String noKantor) {
+        this.noKantor = noKantor;
+    }
+
+    // Metode toString untuk mencetak informasi hotel
+    @Override
+    public String toString() {
+        return "Hotel{" +
+                "idHotel=" + idHotel +
+                ", namaHotel='" + namaHotel + '\'' +
+                ", alamat='" + alamat + '\'' +
+                ", noKantor='" + noKantor + '\'' +
+                '}';
+    }
+}

@@ -1,0 +1,67 @@
+public class Tamu {
+
+    // Deklarasi atribut
+    private int idTamu;
+    private String namaPelanggan;
+    private String noHP;
+    private String alamat;
+
+    // Konstruktor tanpa parameter
+    public Tamu() {
+    }
+
+    // Konstruktor dengan parameter
+    public Tamu(int idTamu, String namaPelanggan, String noHP, String alamat) {
+        this.idTamu = idTamu;
+        this.namaPelanggan = namaPelanggan;
+        this.noHP = noHP;
+        this.alamat = alamat;
+    }
+
+    // Getter dan Setter untuk idTamu
+    public int getIdTamu() {
+        return idTamu;
+    }
+
+    public void setIdTamu(int idTamu) {
+        this.idTamu = idTamu;
+    }
+
+    // Getter dan Setter untuk namaPelanggan
+    public String getNamaPelanggan() {
+        return namaPelanggan;
+    }
+
+    public void setNamaPelanggan(String namaPelanggan) {
+        this.namaPelanggan = namaPelanggan;
+    }
+
+    // Getter dan Setter untuk noHP
+    public String getNoHP() {
+        return noHP;
+    }
+
+    public void setNoHP(String noHP) {
+        this.noHP = noHP;
+    }
+
+    // Getter dan Setter untuk alamat
+    public String getAlamat() {
+        return alamat;
+    }
+
+    public void setAlamat(String alamat) {
+        this.alamat = alamat;
+    }
+
+    // Metode toString untuk mencetak informasi tamu
+    @Override
+    public String toString() {
+        return "Tamu{" +
+                "idTamu=" + idTamu +
+                ", namaPelanggan='" + namaPelanggan + '\'' +
+                ", noHP='" + noHP + '\'' +
+                ", alamat='" + alamat + '\'' +
+                '}';
+    }
+}

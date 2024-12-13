@@ -1,0 +1,105 @@
+import java.time.LocalDate;
+
+public class Reservasi {
+
+    // Deklarasi atribut
+    private int reservationID;
+    private int IDtamu;
+    private int IDkamar;
+    private String statusKamar;
+    private LocalDate checkInDate;
+    private LocalDate checkOutDate;
+    private double jumlahTotal;
+
+    // Konstruktor tanpa parameter
+    public Reservasi() {
+    }
+
+    // Konstruktor dengan parameter
+    public Reservasi(int reservationID, int IDtamu, int IDkamar, String statusKamar, LocalDate checkInDate, LocalDate checkOutDate, double jumlahTotal) {
+        this.reservationID = reservationID;
+        this.IDtamu = IDtamu;
+        this.IDkamar = IDkamar;
+        this.statusKamar = statusKamar;
+        this.checkInDate = checkInDate;
+        this.checkOutDate = checkOutDate;
+        this.jumlahTotal = jumlahTotal;
+    }
+
+    // Getter dan Setter untuk reservationID
+    public int getReservationID() {
+        return reservationID;
+    }
+
+    public void setReservationID(int reservationID) {
+        this.reservationID = reservationID;
+    }
+
+    // Getter dan Setter untuk IDtamu
+    public int getIDtamu() {
+        return IDtamu;
+    }
+
+    public void setIDtamu(int IDtamu) {
+        this.IDtamu = IDtamu;
+    }
+
+    // Getter dan Setter untuk IDkamar
+    public int getIDkamar() {
+        return IDkamar;
+    }
+
+    public void setIDkamar(int IDkamar) {
+        this.IDkamar = IDkamar;
+    }
+
+    // Getter dan Setter untuk statusKamar
+    public String getStatusKamar() {
+        return statusKamar;
+    }
+
+    public void setStatusKamar(String statusKamar) {
+        this.statusKamar = statusKamar;
+    }
+
+    // Getter dan Setter untuk checkInDate
+    public LocalDate getCheckInDate() {
+        return checkInDate;
+    }
+
+    public void setCheckInDate(LocalDate checkInDate) {
+        this.checkInDate = checkInDate;
+    }
+
+    // Getter dan Setter untuk checkOutDate
+    public LocalDate getCheckOutDate() {
+        return checkOutDate;
+    }
+
+    public void setCheckOutDate(LocalDate checkOutDate) {
+        this.checkOutDate = checkOutDate;
+    }
+
+    // Getter dan Setter untuk jumlahTotal
+    public double getJumlahTotal() {
+        return jumlahTotal;
+    }
+
+    public void setJumlahTotal(double jumlahTotal) {
+        this.jumlahTotal = jumlahTotal;
+    }
+
+    // Metode toString untuk mencetak informasi reservasi
+    @Override
+    public String toString() {
+        return "Reservasi{" +
+                "reservationID=" + reservationID +
+                ", IDtamu=" + IDtamu +
+                ", IDkamar=" + IDkamar +
+                ", statusKamar='" + statusKamar + '\'' +
+                ", checkInDate=" + checkInDate +
+                ", checkOutDate=" + checkOutDate +
+                ", jumlahTotal=" + jumlahTotal +
+                '}';
+    }
+}
